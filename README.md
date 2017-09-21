@@ -1,1 +1,1 @@
-# SQL-Tasks
+# SQL-practice
