@@ -50,8 +50,7 @@ SELECT *
 FROM nation
 WHERE n_name = 'UNITED STATES';
 
-
--- Çå³ý
+-- Ã‡Ã¥Â³Ã½
 drop trigger updateNationkey on nation;
 drop trigger updateNationkey_before on nation;
 drop trigger updateNationkey_after on nation;
@@ -59,13 +58,7 @@ drop function nationkey();
 drop function nationkey_before();
 drop function nationkey_after();
 
-
-
-
-
-
-
---- À¦°óÔÚÒ»ÆðÊÔÊÔ
+--- Ã€Â¦Â°Ã³Ã”ÃšÃ’Â»Ã†Ã°ÃŠÃ”ÃŠÃ”
 CREATE OR REPLACE FUNCTION nationkey() RETURNS TRIGGER AS $nationkey$
   BEGIN
     ALTER TABLE Customer DROP CONSTRAINT fk1;
